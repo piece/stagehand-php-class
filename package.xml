@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.9.0RC4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
     http://pear.php.net/dtd/tasks-1.0.xsd
     http://pear.php.net/dtd/package-2.0
     http://pear.php.net/dtd/package-2.0.xsd">
  <name>Stagehand_PHP_Class</name>
  <channel>pear.piece-framework.com</channel>
- <summary>A class for a PHP class.</summary>
- <description>Stagehand_PHP_Class provides features of the building, loading, and code generating for a PHP class.</description>
+ <summary>A meta object system for PHP classes</summary>
+ <description>Stagehand_PHP_Class provides features of the building, loading, and code generating for PHP classes.
+These classes can be written in pure PHP code.</description>
  <lead>
   <name>KUMAKURA Yousuke</name>
   <user>kumatch</user>
@@ -14,7 +15,7 @@
   <active>yes</active>
  </lead>
  <date>2009-09-02</date>
- <time>17:52:09</time>
+ <time>23:06:38</time>
  <version>
   <release>0.1.0</release>
   <api>0.1.0</api>
@@ -23,12 +24,17 @@
   <release>beta</release>
   <api>beta</api>
  </stability>
- <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD License (revised)</license>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-The initial release of Stagehand_PHP_Class.
+The first release of Stagehand_PHP_Class.
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
+   <dir name="doc">
+    <file name="LICENSE" role="doc">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+   </dir> <!-- /doc -->
    <dir name="src">
     <dir name="Stagehand">
      <dir name="PHP">
@@ -171,9 +177,9 @@ The initial release of Stagehand_PHP_Class.
     <api>beta</api>
    </stability>
    <date>2009-09-02</date>
-   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD License (revised)</license>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
    <notes>
-The initial release of Stagehand_PHP_Class.
+The first release of Stagehand_PHP_Class.
    </notes>
   </release>
  </changelog>

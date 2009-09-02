@@ -4,7 +4,7 @@
 /**
  * PHP version 5
  *
- * Copyright (c) 2009 KUMAKURA Yousuke <kumatch@users.sourceforge.net>,
+ * Copyright (c) 2009 KUMAKURA Yousuke <kumatch@gmail.com>,
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -29,7 +29,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @package    stagehand-php-class
- * @copyright  2009 KUMAKURA Yousuke <kumatch@users.sourceforge.net>
+ * @copyright  2009 KUMAKURA Yousuke <kumatch@gmail.com>
  * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License (revised)
  * @version    Release: @package_version@
  * @since      File available since Release 0.1.0
@@ -44,7 +44,7 @@ $releaseVersion = '0.1.0';
 $releaseStability = 'beta';
 $apiVersion = '0.1.0';
 $apiStability = 'beta';
-$notes = 'The initial release of Stagehand_PHP_Class.';
+$notes = 'The first release of Stagehand_PHP_Class.';
  
 $package = new PEAR_PackageFileManager2();
 $package->setOptions(array('filelistgenerator' => 'file',
@@ -62,10 +62,11 @@ $package->setOptions(array('filelistgenerator' => 'file',
  
 $package->setPackage('Stagehand_PHP_Class');
 $package->setPackageType('php');
-$package->setSummary('A class for a PHP class.');
-$package->setDescription('Stagehand_PHP_Class provides features of the building, loading, and code generating for a PHP class.');
+$package->setSummary('A meta object system for PHP classes');
+$package->setDescription('Stagehand_PHP_Class provides features of the building, loading, and code generating for PHP classes.
+These classes can be written in pure PHP code.');
 $package->setChannel('pear.piece-framework.com');
-$package->setLicense('BSD License (revised)', 'http://www.opensource.org/licenses/bsd-license.php');
+$package->setLicense('New BSD License', 'http://www.opensource.org/licenses/bsd-license.php');
 $package->setAPIVersion($apiVersion);
 $package->setAPIStability($apiStability);
 $package->setReleaseVersion($releaseVersion);
